@@ -1,0 +1,19 @@
+git diff : shows the difference/changes wrt previous commit
+
+git status : shows the status of the branch
+
+git branch : shows all the branches
+
+git branch <brach_name> : creates new branch
+
+git add . : stages all the files
+
+git commit -m "" : commits changes with message
+
+git push : pushes to current branch
+
+git push origin <branch_name> : pushes to specified branch
+
+git checkout <branch_main> : shift to a specified branch
+
+git log : commit history
