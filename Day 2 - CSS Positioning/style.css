@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+p {
+	color:red;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 20px;
+}
+
+h3 {
+	margin: 50px;
+	text-align: center;
+}
+
+.parent {
+	width: 400px;
+	height: 400px;
+	background: grey;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+.child1 {
+	width: 100px;
+	height: 100px;
+	background: red;
+/*	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); //this is to edit the x-axis and y-axis*/
+}
+
+.child2 {
+	width: 100px;
+	height: 100px;
+	background: blue;
+/*	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); //this is to edit the x-axis and y-axis*/
+}
