@@ -6,12 +6,16 @@
 
 p {
 	color:red;
-	border: 1px solid black;
 	margin: 20px;
 	padding: 20px;
 }
 
 h3 {
+	margin: 50px;
+	text-align: center;
+}
+
+h2 {
 	margin: 50px;
 	text-align: center;
 }
@@ -27,22 +31,41 @@ h3 {
 }
 
 
-.child1 {
+.child {
 	width: 100px;
 	height: 100px;
 	background: red;
-/*	position: absolute;
+	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%); //this is to edit the x-axis and y-axis*/
+	transform: translate(-50%, -50%); //this is to edit the x-axis and y-axis
 }
 
-.child2 {
-	width: 100px;
+.main_container {
+	background: lightpink;
+	height: 500px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.main_container .con1 {
+	margin: 10px;
 	height: 100px;
-	background: blue;
-/*	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%); //this is to edit the x-axis and y-axis*/
+	width: 100px;
+	background: mintcream;
+}
+.main_container .con2 {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	background: mintcream;
+}
+.main_container .con3 {
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+	background: mintcream;
 }
