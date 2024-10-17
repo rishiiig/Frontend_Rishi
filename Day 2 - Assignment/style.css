@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+h2, h3 {
+	margin: 40px;
+	text-align: center;
+}
+
+p {
+	display: inline;
+}
+
+#id55 {
+	color: green;
+}
+
+.container {
+	margin: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(155, 226, 226);
+}
+
+.container :nth-child(even) {
+	color:yellow;
+	padding: 20px;
+}
+
+.container :nth-child(odd) {
+	color:purple;
+	padding: 20px;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.main p {
+	color: green;
+	border: 3px solid green;
+	/* background-color: rgb(155, 226, 226); */
+	border-radius: 22px;
+	padding: 15px;
+	font-size: 18px;
+}
+
+.jr {
+	width: 100px;
+	height: 100px;
+	background-color: moccasin;
+	border: 2px solid rgb(218, 155, 72);
+}
+
+.master {
+	width: 400px;
+	height: 400px;
+	background-color: lightpink;
+	border: 2px solid rgb(147, 85, 172);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.justify_class_1 .master {
+	flex-direction: column;
+}
+
+.main_container {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.parent {
+	width: 400px;
+	height: 400px;
+	background: grey;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); /* this is to edit the x-axis and y-axis */
+}
