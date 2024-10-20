@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 1500px;
+	align-self: center;
+	margin: auto;
+}
+
+.container .image_class {
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin: 15px;
+}
+
+.container p {
+	font-size: 35px;
+	padding: 20px;
+}
+
+.main_container {
+	height: 1000px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: darkred;
+}
+
+.main_container .form_container {
+	background-color: lightgoldenrodyellow;
+}
+
+.form {
+/*	margin: auto;*/
+}
+
