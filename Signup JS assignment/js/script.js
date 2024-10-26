@@ -1,45 +1,8 @@
-// console.log("This is JavaScript");
-
-// var name = "GMIT";
-
-// function f1() {
-//     console.log("Function 1 : " + name);
-// }
-
-// function f2() {
-//     console.log("Function 2 : "+ name);
-// }
-
-// f1();
-
-// f2();
-
-// function f3(a, b) {
-//     // c = a + b;
-
-//     var c = parseInt(a) + parseInt(b);
-//     return c
-// }
-
-// result = f3(5, '5')
-
-// console.log(result)
-
-// console.log(typeof(result))
-
 var username = "rishi";
 var password = "123";
 
 function fnValidate(fname) {
-    
     return fname === username ? false : true;
-    
-    // if(fname === username) {
-    //     return false;
-    // }
-    // else {
-    //     return true;
-    // }
 }
 
 function fnSignup() {
