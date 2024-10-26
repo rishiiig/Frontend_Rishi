@@ -1,0 +1,40 @@
+JavaScript is a singel threaded language.
+
+It is not strictly typed.
+
+type of variables:
+    var
+    let
+    const
+
+==> let and const variables are block scoped i.e.,
+        if written like this:
+            {
+                var a = 5
+                let b = 5
+                const c = 5
+            }
+        
+        'var' can be accessed here outside of the block
+        whereas, 'let' and 'const' are not accessable
+
+but, the concept of local and global variables does apply for the 'var'
+
+
+
+
+
+
+In calling functions for 'validating' or 'accessing elements', we use "document."
+
+        The 'document' has the full information of the HTML page.
+
+        'getElementById' is used to get the elemets with their 'ids'
+        This get the elements' value
+            others are:
+                getElementsByClass : Stores in Array
+                getElementsByName : Stores in Array
+                    etc...
+        
+    IDs have to be unique for elements
+    Many elements can have same CLASS or NAME
