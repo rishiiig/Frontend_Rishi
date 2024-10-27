@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Day 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <br>
+
+        <form onsubmit="fnValidateSignUpForm(event)">
+            <label for="fname">First Name : </label>
+            <input type="text" value="" name="fname">
+            <span class="error fname-empty">This field cannot be empty</span>
+            <span class="error fname-incorrect">First Name should have at least 4 characters</span>
+            <br> <br>
+
+            <label for="lname">Last Name : </label>
+            <input type="text" value="" name="lname">
+            <span class="error lname-empty">This field cannot be empty</span>
+            <span class="error lname-empty">Last Name should have at least 1 character</span>
+            <br> <br>
+
+            <label for="email">Email : </label>
+            <input type="text" value="" name="email">
+            <span class="error email">This field cannot be empty</span>
+            <span class="error email-incorrect">First Name should have at least 4 characters</span>
+            <br> <br>
+
+            <label for="pass">Password : </label>
+            <input type="password" value="" name="pass">
+            <span class="error pass-empty">This field cannot be empty</span>
+            <span class="error pass-incorrect">The password should have ..</span>
+            <br> <br>
+
+            <label for="cpass"> Confirm Password : </label>
+            <input type="password" value="" id="cpass">
+            <span class="error cpass-empty">This field cannot be empty</span>
+            <span class="error cpass-incorrect">The password should have ..</span>
+            <br> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

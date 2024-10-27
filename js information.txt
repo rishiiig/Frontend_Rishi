@@ -38,3 +38,9 @@ In calling functions for 'validating' or 'accessing elements', we use "document.
         
     IDs have to be unique for elements
     Many elements can have same CLASS or NAME
+
+
+
+Using Forms:
+    
+    Taking the objects as input for the validation is preferred   /   almost considered best practice
