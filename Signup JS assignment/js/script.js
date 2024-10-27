@@ -5,6 +5,14 @@ function fnValidate(fname) {
     return fname === username ? false : true;
 }
 
+function fnValidatePass(pass, cpass) {
+    return pass === cpass ? true : false;
+}
+
+function fnValidateNameLength(name) {
+    return name.length >= 5 ? true : false;
+}
+
 function fnSignup() {
     console.log("Validating");
 
@@ -23,6 +31,29 @@ function fnSignup() {
     }
     else {
         console.log("Good Username");
+    }
+
+    let validatePasswordSame = fnValidatePass(ippass, ipcpass);
+
+    if(validatePasswordSame) {
+        console.log("Password Correct");
+    } else {
+        console.log("Password Missmatch");
+    }
+
+    let validateFNameLength = fnValidateNameLength(ipfirst);
+    let validateLNameLength = fnValidateNameLength(iplast);
+
+    if(validateFNameLength) {
+        console.log("Name Correct");
+    } else {
+        console.log("Name not correct");
+    }
+
+    if(validateLNameLength) {
+        console.log("Name Correct");
+    } else {
+        console.log("Name not correct");
     }
 
 }
