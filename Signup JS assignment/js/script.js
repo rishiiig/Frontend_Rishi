@@ -45,15 +45,14 @@ function fnSignup() {
     let validateLNameLength = fnValidateNameLength(iplast);
 
     if(validateFNameLength) {
-        console.log("Name Correct");
+        console.log("First name Correct");
     } else {
-        console.log("Name not correct");
+        console.log("First name not correct");
     }
 
     if(validateLNameLength) {
-        console.log("Name Correct");
+        console.log("Last name Correct");
     } else {
-        console.log("Name not correct");
+        console.log("Last name not correct");
     }
-
 }
