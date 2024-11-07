@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="signup_form">
+			<h2>Sign Up</h2>
+
+			<form onsubmit="fnValidateSignUpForm(event)">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" value="" name="fname">
+				<div class="error-message fname-empty">First name is required.</div>
+				<div class="error-message fname-invalid">First name must be more than 2 characters.</div>
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" value="" name="lname">
+				<div class="error-message lname-empty">Last name is required.</div>
+				<div class="error-message lname-invalid">Last name must be more than 2 characters.</div>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" value="" name="email">
+				<div class="error-message email-invalid">Provide a valid email.</div>
+
+				<label for="pass">Password</label>
+				<input type="password" id="pass" value="" name="pass">
+				<div class="error-message password-invalid">Password must have 8 characters, with letters and numbers.
+				</div>
+
+				<label for="cpass">Confirm Password</label>
+				<input type="password" id="cpass" value="" name="cpass">
+				<div class="error-message confirm-password-invalid">Passwords do not match.</div>
+
+				<button type="submit">Sign Up</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
