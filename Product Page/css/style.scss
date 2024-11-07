@@ -1,89 +1,231 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    .content {
-        .main {
-            p {
-                color: green;
-            }
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-
-            &:hover {
-                background-color: red;
-                color: white;
-            }
-        }
-    }
+body {
+    font-family: Arial, sans-serif;
 }
 
 .header {
-
     .nav {
         background-image: url("../images/header_image.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         height: 70px;
+        padding: 0 20px;
 
-        .logo {
-
-            img {
-                height: 60px;
-                padding: 10px;
-            }
+        .logo img {
+            height: 50px;
         }
 
-        .list {
-            ul {
-                list-style: none;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
+        .list ul {
+            list-style: none;
+            display: flex;
+        }
 
-            li {
-                padding: 10px;
-                font-size: 18px;
-            }
+        .list li {
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
         }
     }
 }
 
 h2 {
-    margin: 30px;
+    margin: 20px;
     text-align: center;
+    font-size: 2em;
+    color: #333;
 }
 
-.products_conatainer {
-    background-color: cyan;
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    max-width: 1200px;
+    margin: 0 auto;
 
     ul {
         list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        li {
+    .product {
+        flex: 1 1 250px; // Allows flexibility with a minimum width of 250px
+        max-width: 300px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
 
-            .product {
-                width: 300px;
-                height: 400px;
+        &:hover {
+            transform: translateY(-10px);
+        }
 
-                h5 {
-                    text-align: center;
-                }
-                img {
-                    width: 200px;
-                }
+        h5 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 150px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #0056b3;
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//     margin: 0px;
+//     padding: 0px;
+// }
+
+// .container {
+//     .content {
+//         .main {
+//             p {
+//                 color: green;
+//             }
+//         }
+
+//         a {
+//             text-decoration: none;
+//             color: black;
+
+//             &:hover {
+//                 background-color: red;
+//                 color: white;
+//             }
+//         }
+//     }
+// }
+
+// .header {
+
+//     .nav {
+//         background-image: url("../images/header_image.jpg");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         height: 70px;
+
+//         .logo {
+
+//             img {
+//                 height: 60px;
+//                 padding: 10px;
+//             }
+//         }
+
+//         .list {
+//             ul {
+//                 list-style: none;
+//                 display: flex;
+//                 justify-content: flex-end;
+//                 align-items: center;
+//             }
+
+//             li {
+//                 padding: 10px;
+//                 font-size: 18px;
+//             }
+//         }
+//     }
+// }
+
+// h2 {
+//     margin: 30px;
+//     text-align: center;
+// }
+
+// .products_conatainer {
+//     background-color: cyan;
+
+//     ul {
+//         list-style: none;
+
+//         li {
+
+//             .product {
+//                 width: 300px;
+//                 height: 400px;
+
+//                 h5 {
+//                     text-align: center;
+//                 }
+//                 img {
+//                     width: 200px;
+//                 }
+//             }
+//         }
+//     }
+// }
