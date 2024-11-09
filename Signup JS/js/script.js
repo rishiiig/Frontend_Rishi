@@ -27,9 +27,14 @@ function fnValidateSignUpForm(e) {
     document.getElementsByClassName("lname-empty")[0].style.display = lname ? "none" : "block";
     document.getElementsByClassName("lname-invalid")[0].style.display = validateLname || !lname ? "none" : "block";
       
-    document.getElementsByClassName("email-invalid")[0].style.display = validateEmail ? "none" : "block";
-    document.getElementsByClassName("password-invalid")[0].style.display = validatePass ? "none" : "block";
-    document.getElementsByClassName("confirm-password-invalid")[0].style.display = validateCPass ? "none" : "block";
+    document.getElementsByClassName("email-empty")[0].style.display = email ? "none" : "block";
+    document.getElementsByClassName("email-invalid")[0].style.display = validateEmail || !email? "none" : "block";
+
+    document.getElementsByClassName("password-empty")[0].style.display = pass ? "none" : "block";
+    document.getElementsByClassName("password-invalid")[0].style.display = validatePass || !pass ? "none" : "block";
+    
+    document.getElementsByClassName("confirm-password-empty")[0].style.display = cpass ? "none" : "block";
+    document.getElementsByClassName("confirm-password-invalid")[0].style.display = validateCPass || !cpass ? "none" : "block";
 
     console.log("error display code");
 
