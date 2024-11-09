@@ -1,8 +1,8 @@
-Signup complete.
-
 Signup Result:
 
 ![alt text](image.png)
 
 
-Product page: half
+Product page Result:
+
+![alt text](image-1.png)
